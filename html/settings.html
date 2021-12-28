@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settings</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<style type="text/css">
+		/*MCSS v1.0*/
+		/*© Matthias Lee 2020 Redistribution, Modification, and all other usage of this code is permitted so long as this copyright notice is maintained.*/
+		/*If modified, may not be redistributed and passed off as the original copy*/
+		body{
+		  margin-right: 0px;
+		  margin-bottom: 0px;
+		}
+		.button{
+		  text-decoration: none;
+		  color: #242424;
+		  font-size: 25px;
+		  margin-left: 10px;
+		  border: 2px solid #242424;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		.button:hover{
+		  background-color: #242424;
+		  color: white;
+		}
+		button{
+		  color: #242424;
+		  font-size: 25px;
+		  margin-left: 10px;
+		  border: 2px solid #242424;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		button:hover{
+		  background-color: #242424;
+		  color: white;
+		}
+		input{
+		  height: 30px;
+		  font-size: 22px;
+		  border: 1px solid black;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		input:focus, button:focus, textarea:focus, a:focus{
+		  outline: none !important;
+		}
+		.text-xsmall {
+		  margin-top: 0px;
+		  font-size: 10px;
+		}
+		.text-small {
+		  margin-top: 0px;
+		  font-size: 16px;
+		}
+		.text-medium {
+		  margin-top: 0px;
+		  font-size: 40px;
+		}
+		.text-large {
+		  margin-top: 0px;
+		  font-size: 70px;
+		}
+		.text-medium-small {
+		  margin-top: 0px;
+		  font-size: 25px;
+		}
+		.text-xlarge {
+		  margin-top: 0px;
+		  font-size: 125px;
+		}
+	</style>
+</head>
+<body>
+	<p style="display: inline;">Logged in as <a style="color: black; text-decoration: none;" href="/user?user=__username__">__displayname__</a><a style="color: #2589db; text-decoration: none;" href="javascript:void(alert('@__username__ is a verified user.'))">__verified__</a> <a style="color: black; text-decoration: none;" href="/user?user=__username__">(@__username__)</a> <a style="color: blue;" href="/messages">Messages</a> <a style="color:blue;" href="/?logout=true">Log Out</a> <a style="color:blue;" href="/">Home</a></p>
+	<br>
+	<form method="POST" action="/modify_user">
+		<label for="password">Password</label>
+		<input type="password" name="password">
+		<button  type="submit">Change</button>
+	</form>
+	<br>
+	<form method="POST" action="/modify_user">
+		<label for="display_name">Display Name</label>
+		<input type="text" name="display_name">
+		<button  type="submit">Change</button>
+	</form>
+	<br>
+	<form method="POST" action="/modify_user">
+		<label for="about_me">About Me</label>
+		<textarea type="text" name="about_me"></textarea>
+		<button type="submit">Change</button>
+	</form>
+	<br>
+	<form method="POST" action="/modify_user">
+		<input type="text" name="deleteacct" placeholder="Enter your password" style="">
+		<button type="submit"><p style="color: red;">Delete Account</p></button>
+	</form>
+</body>
+</html>

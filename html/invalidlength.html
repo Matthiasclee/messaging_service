@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+	<style type="text/css">
+		/*MCSS v1.0*/
+		/*© Matthias Lee 2020 Redistribution, Modification, and all other usage of this code is permitted so long as this copyright notice is maintained.*/
+		/*If modified, may not be redistributed and passed off as the original copy*/
+		body{
+		  margin-right: 0px;
+		  margin-bottom: 0px;
+		}
+		.button{
+		  text-decoration: none;
+		  color: #242424;
+		  font-size: 25px;
+		  margin-left: 10px;
+		  border: 2px solid #242424;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		.button:hover{
+		  background-color: #242424;
+		  color: white;
+		}
+		button{
+		  color: #242424;
+		  font-size: 25px;
+		  margin-left: 10px;
+		  border: 2px solid #242424;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		button:hover{
+		  background-color: #242424;
+		  color: white;
+		}
+		input{
+		  height: 30px;
+		  font-size: 22px;
+		  border: 1px solid black;
+		  border-radius: 10px;
+		  background-color: white;
+		}
+		input:focus, button:focus, textarea:focus, a:focus{
+		  outline: none !important;
+		}
+		.text-xsmall {
+		  margin-top: 0px;
+		  font-size: 10px;
+		}
+		.text-small {
+		  margin-top: 0px;
+		  font-size: 16px;
+		}
+		.text-medium {
+		  margin-top: 0px;
+		  font-size: 40px;
+		}
+		.text-large {
+		  margin-top: 0px;
+		  font-size: 70px;
+		}
+		.text-medium-small {
+		  margin-top: 0px;
+		  font-size: 25px;
+		}
+		.text-xlarge {
+		  margin-top: 0px;
+		  font-size: 125px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sign Up</h1>
+	<form action="/signup" method="post">
+		<p style="color:red;">Username must be at least 2 characters long</p>
+		<label for="user">Username</label>
+		<input type="text" name="user">
+		<br>
+		<label for="password">Password</label>
+		<input type="password" name="password">
+		<br>
+		<button type="submit">Go!</button>
+	</form>
+</body>
+</html>
